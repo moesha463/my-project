@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #1a1a1a, #2a2a2a);
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(8px);
+}
+
+.blurred {
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+}
+
+.hero-section {
+    background: linear-gradient(to bottom, #2a2a2a, #4a1a1a);
+    border-bottom: 2px solid #FFD700;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, rgba(255, 0, 0, 0.05) 70%, transparent 100%);
+    animation: rotate 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.glow-card {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3), 0 0 30px rgba(255, 0, 0, 0.2) inset;
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-card:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 0, 0, 0.3) inset;
+}
+
+.glowing-orange-icon {
+    filter: hue-rotate(40deg) brightness(1.2) drop-shadow(0 0 8px rgba(255, 165, 0, 0.6));
+    transition: filter 0.3s ease;
+}
+
+.glowing-orange-icon:hover {
+    filter: hue-rotate(40deg) brightness(1.4) drop-shadow(0 0 12px rgba(255, 165, 0, 0.8));
+}
