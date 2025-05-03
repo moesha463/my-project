@@ -15,9 +15,9 @@ function HeroSection() {
             </motion.h1>
             <div className="flex justify-center space-x-6 sm:space-x-12 mb-8 sm:mb-12 z-10 relative flex-wrap gap-4 px-4">
                 {[
-                    { src: '/images/soccer_ball__07233.webp', alt: 'Nogomet' },
-                    { src: '/images/ball-of-basketball.svg', alt: 'Košarka' },
-                    { src: '/images/hockey.svg', alt: 'Hokej' }
+                    { src: '/src/images/soccer_ball__07233.webp', alt: 'Nogomet' },
+                    { src: '/src/images/ball-of-basketball.svg', alt: 'Košarka' },
+                    { src: '/src/images/hockey.svg', alt: 'Hokej' }
                 ].map((icon, index) => (
                     <motion.img
                         key={index}
@@ -32,9 +32,9 @@ function HeroSection() {
             </div>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-8 z-10 relative px-4">
                 {[
-                    { icon: '/images/license-3.png', text: 'Licencirane platforme u Hrvatskoj' },
-                    { icon: '/images/odds.svg', text: 'Visoki koeficijenti' },
-                    { icon: '/images/free-gift-icon-912-thumb.png', text: 'Atraktivni bonusi' }
+                    { icon: '/src/images/license-3.png', text: 'Licencirane platforme u Hrvatskoj' },
+                    { icon: '/src/images/odds.svg', text: 'Visoki koeficijenti' },
+                    { icon: '/src/images/free-gift-icon-912-thumb.png', text: 'Atraktivni bonusi' }
                 ].map((point, index) => (
                     <motion.div
                         key={index}
