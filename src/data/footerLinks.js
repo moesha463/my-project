@@ -2,7 +2,7 @@ export const footerLinks = [
     {
         name: 'GambleAware',
         url: 'https://www.gambleaware.org/',
-        image: '//src/images/gambling.svg'
+        image: '/src/images/gambling.svg'
     },
     {
         name: 'BeGambleAware',

@@ -5,7 +5,7 @@ import { footerLinks } from '../data/footerLinks';
 
 function Footer() {
     return (
-        <footer className="bg-black text-gray-300 p-4 sm:p-6" style={{marginTop: "40px"}}>
+        <footer className="bg-black text-gray-300 p-4 sm:p-6" style={{ marginTop: "40px" }}>
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
                 <div className="mb-4 md:mb-0 text-center md:text-left">
                     <p className="text-casino-gold font-bold mb-2 text-base sm:text-lg">18+ | Igrajte odgovorno</p>
@@ -42,6 +42,19 @@ function Footer() {
                         </motion.div>
                     ))}
                 </div>
+            </div>
+            <div className="container mx-auto mt-6 px-4 sm:px-6 lg:px-8">
+                <motion.div
+                    className="bg-dark-card p-4 sm:p-6 rounded-lg flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 glow-card"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <span className="text-4xl sm:text-5xl text-casino-gold glowing-orange-icon">🛑</span>
+                    <p className="text-gray-300 text-center sm:text-left text-sm sm:text-base leading-relaxed">
+                        <span className="font-bold text-casino-gold">18+ Samo</span> | Klađenje Hrvatska ne pruža izravan pristup uslugama klađenja ili kockanja. Naša platforma služi isključivo za informiranje i preporuke. Posjetitelji moraju biti stariji od 18 godina i pridržavati se principa odgovornog klađenja. Igrajte pametno i u skladu s lokalnim zakonima.
+                    </p>
+                </motion.div>
             </div>
         </footer>
     );

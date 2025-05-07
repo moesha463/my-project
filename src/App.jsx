@@ -7,6 +7,9 @@ import AgePopup from './components/AgePopup';
 import Home from './pages/Home';
 import MobileBetting from './pages/MobileBetting';
 import FootballBetting from './pages/FootballBetting';
+import BasketballBetting from './pages/BasketballBetting';
+import HockeyBetting from './pages/HockeyBetting';
+import TennisBetting from './pages/TennisBetting';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import About from './pages/About';
@@ -45,6 +48,9 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/mobile-betting" element={<MobileBetting />} />
                         <Route path="/football-betting" element={<FootballBetting />} />
+                        <Route path="/basketball-betting" element={<BasketballBetting />} />
+                        <Route path="/hockey-betting" element={<HockeyBetting />} />
+                        <Route path="/tennis-betting" element={<TennisBetting />} />
                         <Route path="/terms" element={<Terms />} />
                         <Route path="/privacy" element={<Privacy />} />
                         <Route path="/about" element={<About />} />
